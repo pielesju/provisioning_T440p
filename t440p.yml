@@ -1,0 +1,11 @@
+---
+- name: T440p Playbook
+  hosts: localhost
+  connection: local
+  become: true
+
+  tasks:
+  - name: Install htop
+    pacman:
+      name: htop
+      state: present
